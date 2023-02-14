@@ -15,7 +15,7 @@ def article_summ(article_request):
         email_pitch_request = f'write down a quick summary of main points (make sure to include data ' \
                               f'from the article) of this article: \n{article_request}'
 
-        openai.api_key = "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"
+        openai.api_key = "API"
         request = openai.Completion.create(
             engine="text-davinci-003",
             prompt=email_pitch_request,
