@@ -58,6 +58,5 @@ async function request_article(url) {
 }
 
 async function return_summary(website_url) {
-    var website_url = "https://www.forbes.com/sites/forbestechcouncil/2021/12/22/how-to-sell-a-domain-name-for-profit/?sh=795358fc165c"
     return await article_summ(await request_article(website_url));
 }
