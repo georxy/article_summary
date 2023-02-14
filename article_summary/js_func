@@ -1,0 +1,9 @@
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("run-func").addEventListener("click", function() {
+    chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+      var website_name = tabs[0].url;
+      var result = return_summary(website_name);
+      document.getElementById("result").value = result;
+    });
+  });
+});
